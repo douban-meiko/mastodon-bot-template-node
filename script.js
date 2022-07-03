@@ -1,4 +1,3 @@
-require('dotenv').config()
 const Masto = require("mastodon");
 
 // main logic goes here
