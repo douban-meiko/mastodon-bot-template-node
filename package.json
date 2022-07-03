@@ -1,0 +1,27 @@
+{
+  "name": "mastodon-bot-template-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/douban-meiko/mastodon-bot-template-node.git"
+  },
+  "author": "meiko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douban-meiko/mastodon-bot-template-node/issues"
+  },
+  "homepage": "https://github.com/douban-meiko/mastodon-bot-template-node#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mastodon": "^1.2.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
