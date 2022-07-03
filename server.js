@@ -12,5 +12,5 @@ app.get(endpoint, (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example bot listening on port ${port}`)
+  console.log(`Example bot listening at ${endpoint} on port ${port}`)
 })
