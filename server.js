@@ -8,7 +8,12 @@ const endpoint = process.env['ENDPOINT'] || '/'
 
 app.get(endpoint, (req, res) => {
   console.log('request received');
-  executeScript(req, res);
+  if (req.headers['x-api-key'] == process.env['CLIENT_API_KEY']) {
+    executeScript(req, res);
+  } else {
+    console.log('unauthenticated request');
+    res.status(403).json({ 'error': 'authentication failed' });
+  }
 })
 
 app.listen(port, () => {
